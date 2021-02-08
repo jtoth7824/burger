@@ -1,0 +1,24 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Eat Da burger restaurant app",
+  "main": "server.js",
+  "scripts": {
+    "test": "N/A"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtoth7824/burger.git"
+  },
+  "author": "John Toth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtoth7824/burger/issues"
+  },
+  "homepage": "https://github.com/jtoth7824/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
