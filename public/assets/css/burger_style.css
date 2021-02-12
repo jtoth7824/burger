@@ -17,3 +17,14 @@ li {
   .form-group {
     margin-bottom: 5px;
   }
+
+  .image {
+    height: 100px;
+    width: 100px;
+  }
+
+  .johnPic {
+    max-width: 100%;
+    height: auto;
+    max-height: 260px;
+}
