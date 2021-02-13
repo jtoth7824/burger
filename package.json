@@ -4,7 +4,8 @@
   "description": "Eat Da burger restaurant app",
   "main": "server.js",
   "scripts": {
-    "test": "N/A"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

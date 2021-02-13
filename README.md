@@ -62,4 +62,4 @@ Direct link to repository:  https://github.com/jtoth7824/burger
 
 ## Deployment
 
-Direct link to deployed Note Taker application on Heroku:   https://radiant-oasis-92160.herokuapp.com/
+Direct link to deployed Eat-Da-Burger application on Heroku:   https://radiant-oasis-92160.herokuapp.com/
