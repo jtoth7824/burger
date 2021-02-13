@@ -1,80 +1,69 @@
-<div class="container">
-  <div class="row justify-content-center">
-  <img class="johnPic img-responsive" src="./assets/img/burger.png"></image>
-  </div>
-
-  <h1 class="text-center">Eat-Da-Burger!</h1>
-</div>
 <br>
 <div class="container">
-  <div class="row">
+  <h1 class="text-center text-white">Eat-Da-Burger!</h1>
+  <div class="row justify-content-center">
+    <img class="johnPic img-responsive" src="./assets/img/burger.png"></image>
   </div>
+</div>
+<div class="container">
   <div class="row justify-content-center">
     <form class="text-center" id="create-form">
-    <h2 class="text-center">May I take your order?</h2>
-    <h6 class="text-center">Enter the name of burger would you like to eat?</h6>
+      <h2 class="text-center">May I take your order?</h2>
+      <h6 class="text-center">Enter the name of burger you would like to eat</h6>
       <div class="form-group">
-<!--        <label for="bu">Burger Name:</label>-->
         <input type="text" id="bu" name="name">
       </div>
-
-<!--      <div class="form-group">-->
-<!--        <label for="devour">Devoured?</label><br>-->
-<!--        <input type="radio" name="devour" value="1" id="devoured" checked> Devoured!<br>-->
-<!--        <input type="radio" name="devour" value="0" id="available"> Available-->
-<!--      </div>-->
-
       <button type="submit">Add Burger</button>
     </form>
   </div>
-<br>
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="card">
-      <div class="card-title text-center">
-        <h2>Good Eating!</h2>
-      </div>
-      <div class="card-body">
-        <ul>
-          {{#each burgers}}
-          {{#unless devoured}}
-          {{> burgers/burger-block}}
-          {{/unless}}
-          {{/each}}
-        </ul>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-title text-center" style="display: hidden">
-        <h2>Good Eating!</h2>
-      </div>      
-      <div class="card-body">
-        <ul>
-          {{#each burgers}}
-          {{#unless devoured}}
-          {{>burgers/burger-block devoured=true}}
-          {{/unless}}
-          {{/each}}
-        </ul>
-      </div>
-    </div>
-
-
-    <div class="card">
-      <div class="card-title text-center">
-        <h2>Already Devoured!</h2>
-      </div>
-      <div class="card-body">
-        <ul>
-          {{#each burgers}}
-          {{#if devoured}}
-          {{> burgers/burger-block devoured=false}}
+  <br>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="card bg-transparent border-white">
+        <div class="card-title text-center">
+          <h2 class="text-white">Good Eating!</h2>
+        </div>
+        <div class="card-body">
+          {{#if eaten}}
+          <h4 class="text-white">All gone!</h4>
           {{/if}}
-          {{/each}}
-        </ul>
+          <ul class="no-bullets">
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-block}}
+            {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      <div class="card cardBorder bg-transparent">
+        <div class="card-title text-center" style="display: hidden">
+          <h2 class="text-white" style="visibility: hidden">Good Eating!</h2>
+        </div>
+        <div class="card-body">
+          <ul class="no-bullets">
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-buttonblock devoured=true}}
+            {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      <div class="card bg-transparent border-white">
+        <div class="card-title text-center">
+          <h2 class="text-white">Already Devoured!</h2>
+        </div>
+        <div class="card-body">
+          <ul class="no-bullets">
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burger-block devoured=false}}
+            {{/if}}
+            {{/each}}
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
 </div>

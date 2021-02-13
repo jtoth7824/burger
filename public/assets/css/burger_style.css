@@ -1,30 +1,47 @@
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    background: white;
   }
   
   .label {
     font-weight: bold;
+    color: white;
   }
   
   #create-form {
+    color: white;
     padding: 5px;
     margin: 5px;
-    background: aqua;
+  /*  background-color: rgb(56, 27, 4)*/
+    background-color: brown;
   }
   
   .form-group {
     margin-bottom: 5px;
   }
 
-  .image {
-    height: 100px;
-    width: 100px;
-  }
-
   .johnPic {
     max-width: 100%;
     height: auto;
     max-height: 260px;
+}
+
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+body {
+/*  background-color: rgb(56, 27, 4);*/
+  background-color: brown;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.cardBorder {
+  border: none;
 }
