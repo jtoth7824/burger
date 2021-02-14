@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
           // Check that the response is all good
           // Reload the page so the user can see the new quote
           if (response.ok) {
-            console.log(`changed devoured to: ${newDevour}`);
             location.reload('/');
           } else {
             alert('something went wrong!');
@@ -68,7 +67,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById('bu').value = '';
 
         // Reload the page so the user can see the new quote
-        console.log('Created a new burger!');
         location.reload();
       });
     });

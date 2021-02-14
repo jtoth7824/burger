@@ -24,9 +24,11 @@
           <h2 class="text-white">Good Eating!</h2>
         </div>
         <div class="card-body">
+          <!-- if all burgers devoured, then none left in left column - display 'all gone' -->
           {{#if eaten}}
           <h4 class="text-white">All gone!</h4>
           {{/if}}
+          <!-- if burgers available, then loop and fill in information for list -->
           <ul class="no-bullets">
             {{#each burgers}}
             {{#unless devoured}}
@@ -41,6 +43,7 @@
           <h2 class="text-white" style="visibility: hidden">Good Eating!</h2>
         </div>
         <div class="card-body">
+          <!-- if burgers availabe, then loop and display the Eat Me icons for each availabe burger -->
           <ul class="no-bullets">
             {{#each burgers}}
             {{#unless devoured}}
@@ -55,6 +58,7 @@
           <h2 class="text-white">Already Devoured!</h2>
         </div>
         <div class="card-body">
+          <!-- if no burgers available, then loop and fill in information for devoured list -->
           <ul class="no-bullets">
             {{#each burgers}}
             {{#if devoured}}

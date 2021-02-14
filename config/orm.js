@@ -43,6 +43,7 @@ const orm = {
       if (err) {
         throw err;
       }
+      // return the result in the callback
       cb(result);
     });
   },
@@ -56,13 +57,11 @@ const orm = {
     queryString += printQuestionMarks(vals.length);
     queryString += ') ';
 
-    console.log(queryString);
-
     connection.query(queryString, vals, (err, result) => {
       if (err) {
         throw err;
       }
-
+      // return the result in the callback
       cb(result);
     });
   },
@@ -75,16 +74,15 @@ const orm = {
     queryString += ' WHERE ';
     queryString += condition;
 
-    console.log(queryString);
     connection.query(queryString, (err, result) => {
       if (err) {
         throw err;
       }
-
+      // return result in the callback
       cb(result);
     });
   },
 };
 
-// Export the orm object for the model (cat.js).
+// Export the orm object for the model 
 module.exports = orm;

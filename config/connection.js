@@ -1,10 +1,12 @@
 const mysql = require('mysql');
 var connection;
 
+// setup for deployment to Heroku and JawsDB 
 if(process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 }
 else {
+  // if local then set connection as follows
   connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',

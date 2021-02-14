@@ -21,27 +21,31 @@ li {
     margin-bottom: 5px;
   }
 
+/* size burger image */
   .johnPic {
     max-width: 100%;
     height: auto;
     max-height: 260px;
 }
 
+/* remove bullets from un-ordered list */
 ul.no-bullets {
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
 }
 
+/* change color of background of page */
 body {
 /*  background-color: rgb(56, 27, 4);*/
   background-color: brown;
 }
-
-img:hover {
+ /* change cursor to indicate button when hovering over Eat Me image*/
+ img:hover {
   cursor: pointer;
 }
 
+/* remove card borders */
 .cardBorder {
   border: none;
 }
