@@ -23,7 +23,7 @@ The application utilized an Express server and was deployed through Heroku.
 The following is a screenshot of the Eat-Da-Burger application.
 
 <p align="center">
-  <img src="./images/burgerMain.png" alt="burger screenshot">
+  <img src="./img/burgerMain.png" alt="burger screenshot">
 </p>
 
 ## Installation
