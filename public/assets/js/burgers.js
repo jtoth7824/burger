@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     createBurgerBtn.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      // Grabs the value of the textarea that goes by the name, "quote"
+      // Grabs the value of the textarea
       const newBurger = {
         burger_name: document.getElementById('bu').value.trim(),
         devoured: false
