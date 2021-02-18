@@ -66,6 +66,7 @@ Please email me for further information jtoth7824@gmail.com
 ## Repository
 
 Direct link to repository:  https://github.com/jtoth7824/burger
+Updated Portfolio link:  https://jtoth7824.github.io/portfolio/
 
 ## Deployment
 
