@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           body: JSON.stringify(newDevourState),
         }).then((response) => {
           // Check that the response is all good
-          // Reload the page so the user can see the new quote
+          // Reload the page so the user can see the updated burger
           if (response.ok) {
             location.reload('/');
           } else {
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         devoured: false
       };
 
-      // Send POST request to create a new quote
+      // Send POST request to create a new burger
       fetch('/api/burgers', {
         method: 'POST',
         headers: {
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // Empty the form
         document.getElementById('bu').value = '';
 
-        // Reload the page so the user can see the new quote
+        // Reload the page so the user can see the new burger
         location.reload();
       });
     });
